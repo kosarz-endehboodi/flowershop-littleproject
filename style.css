@@ -1,0 +1,259 @@
+body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/145/original/c7fd1b73-d278-433e-8bb5-0de9c8e9346e.jpg?1684178267-d278-433e-8bb5-0de9c8e9346e.jfif);
+}
+
+/*container page*/
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*header */
+.logo {
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    margin: 4px;
+    padding: 10px;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    margin: 0;
+    color: aliceblue;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #0f362328;
+    background-color: #092014;
+    transition: all 1s ease-in;
+}
+
+ul li:hover,
+.exceptinal button:hover,
+.seeMore {
+    background-color: rgba(15, 46, 30, 0.671);
+    cursor: pointer;
+}
+
+/*page design*/
+#col1 {
+    max-width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.col2 {
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.514);
+    border-radius: 10px;
+}
+
+.exceptinal {
+    color: aliceblue;
+    padding: 10px;
+}
+
+.exceptinal * {
+    margin: 6% auto;
+}
+
+.exceptinal h2 {
+    padding: 10px 0;
+    border-bottom: 1px solid #94b1a2;
+}
+
+.exceptinal button,
+.seeMore {
+    background-color: #062213;
+    border: #092014;
+    padding: 10px 20px;
+    color: aliceblue;
+    border-radius: 20px;
+    transition: all 1s ease-in;
+    margin-top: 4%;
+    box-shadow: 5px 2px 2px #9baaa63a;
+}
+
+.flower img {
+    margin: 0% 20px;
+    width: 400px;
+    height: 500px;
+    border-radius: 202px 200px 0 0;
+}
+
+/*login message*/
+#welcome {
+    color: aliceblue;
+    margin: 10% auto;
+    text-align: center;
+    height: 400px;
+    display: none;
+}
+
+/*flower crown*/
+#col11 {
+    display: flex;
+    color: aliceblue;
+    border-top: 1px solid #ffffff50;
+    padding: 4% 10px;
+    justify-content: center;
+}
+
+#col11 div h2 {
+    border-bottom: 1px solid #94b1a2;
+}
+
+.buyCrown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4%;
+}
+
+.seeMore {
+    width: 30%;
+}
+
+.crown {
+    display: inline;
+    padding: 10px;
+    width: 400px;
+    height: 500px;
+    border-radius: 202px 200px 0 0;
+}
+
+.crownIndex {
+    background-color: #355846;
+    width: 400px;
+    height: 500px;
+    border-radius: 202px 200px 0 0;
+}
+
+/*footer style*/
+.footer {
+    width: 100%;
+    background-color: #153122;
+    padding: 1px 0;
+}
+
+.coder {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.863);
+}
+
+/*responsive*/
+@media only screen and (max-width: 800px) {
+    #col1 {
+        height: 400px;
+    }
+
+    .head {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    ul li {
+        padding: 7px 7px;
+    }
+
+    .flower img {
+        margin: 10% 20px;
+        max-width: 250px;
+        height: 300px;
+        border-radius: 202px 200px 0 0;
+    }
+
+    .crown {
+        max-width: 250px;
+        height: 300px;
+        border-radius: 202px 200px 0 0;
+    }
+
+    .seeMore {
+        width: 70%;
+    }
+
+    .crownIndex {
+        width: 250px;
+        height: 300px;
+        border-radius: 202px 200px 0 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #col1 {
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        height: auto;
+    }
+
+    #col11 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .head {
+        display: block;
+        text-align: center;
+        margin: 6% 0px;
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    ul li {
+        padding: 7px 7px;
+    }
+
+    .flower img {
+        margin: 10% 20px;
+        max-width: 100px;
+        height: 150px;
+        border-radius: 202px 200px 0 0;
+    }
+
+    .crown {
+        width: 100px;
+        height: 150px;
+        border-radius: 202px 200px 0 0;
+    }
+
+    .seeMore {
+        width: 50%;
+    }
+
+    .crownIndex {
+        width: 100px;
+        height: 150px;
+        border-radius: 202px 200px 0 0;
+    }
+}

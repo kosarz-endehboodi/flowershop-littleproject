@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flower shop</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <body>
+      <div clas="container">
+        <!--header-->
+        <div class="col2">
+          <div class="head">
+            <img
+              class="logo"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/172/original/elegant-beauty-flower-floral-blossom-blooming-abstract-logo_467541-431_%281%29.jpg?1684196257"
+              alt="logo"
+            />
+            <ul>
+              <li id="home">Home</li>
+              <li>Our servise</li>
+              <li>About Us</li>
+              <li id="logIn">Log in</li>
+            </ul>
+          </div>
+
+          <!--buy now-->
+          <div id="col1">
+            <div class="exceptinal">
+              <h2>exceptinal</h2>
+
+              <h4>services we offer</h4>
+              <p>
+                better is a simply beautiful and delightful PSD template
+                specially desgined for gardening and home decoration online
+                shop.
+              </p>
+              <button>see all collection</button>
+            </div>
+            <div class="flower">
+              <img
+                src="
+              https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/149/original/ba3c102381dc0ce3fa37464ddaceae34.jpg?1684179898"
+                alt=""
+              />
+            </div>
+          </div>
+          <div id="welcome"></div>
+
+          <div id="col11">
+            <div class="crownIndex">
+              <img
+                class="crown"
+                src="https://rootsfloraldesigns.co.uk/wp-content/uploads/2023/02/crown-scaled.jpg"
+                alt=""
+              />
+            </div>
+            <div class="buyCrown">
+              <h2>flower crown</h2>
+              <p>
+                You don’t have to accessorize yourself with plastic flowers.,in
+                fact, we use preservedflowers. This means that we make
+                accessories that last for years.
+              </p>
+
+              <button class="seeMore">See More</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <h4 class="coder">coded by kosarzendehboodi</h4>
+        </div>
+      </div>
+
+      <script>
+        //varible
+        let login = document.getElementById("logIn");
+        let Homepage = document.getElementById("home");
+        //event
+        login.addEventListener("click", infolog);
+        Homepage.addEventListener("click", home);
+        //function
+        function infolog() {
+          //var
+          let hide = document.getElementById("col1");
+          let hide1 = document.getElementById("col11");
+          //prompt
+          let email = prompt("Please enter your email address:");
+          let name = prompt("Enter your name:");
+          let password = prompt("Create a password:");
+          //login info
+          if (email.length > 0 && name.length > 3 && password.length > 8) {
+            let msgLogIn = document.getElementById("welcome");
+            msgLogIn.innerText = "hi  " + name + "  welcome in website";
+            hide.style.display = "none";
+            hide1.style.display = "none";
+            msgLogIn.style.display = "block";
+          } //if values are not ​​correct
+          else {
+            alert("Please enter the requested values ​​correctly");
+            hide.style.display = "flex";
+            hide1.style.display = "flex";
+          }
+        }
+        function home() {
+          let msgLogIn = document.getElementById("welcome");
+          let hide = document.getElementById("col1");
+          let hide1 = document.getElementById("col11");
+          hide.style.display = "flex";
+          hide1.style.display = "flex";
+          msgLogIn.style.display = "none";
+        }
+      </script>
+    </body>
+  </body>
+</html>
